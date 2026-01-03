@@ -439,6 +439,36 @@ section {
     margin-bottom: 25px;
 }
 
+.project-image {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: var(--transition);
+    max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid var(--dark-slate);
+    background-color: var(--light-navy);
+    padding: 10px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    transition: var(--transition);
+    opacity: 0.9;
+}
+
+.project-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.8);
+}
+
+.project-image:hover img {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
 .project-tech-list {
     display: flex;
     flex-wrap: wrap;
